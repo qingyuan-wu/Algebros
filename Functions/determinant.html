@@ -12,8 +12,15 @@
     <h2>Find the determinant of a square matrix</h2>
     <form>
         <label for="rows">Enter number of rows:</label><br>
-        <input type="text" id="rows" name="rows"><br><br>
-        <input type="submit" value="Submit">
+        <input type="text" id="rows" name="rows" ><br><br>
+        <input type="submit" value="Submit" id="userInput">
+        <script>
+            document.getElementById("userInput").addEventListener("click", storeDimension);
+            function storeDimension() {
+                const input = document.getElementById("userInput").value;
+                alert(input);
+            }
+        </script>
       </form>
 </body>
 </html>
