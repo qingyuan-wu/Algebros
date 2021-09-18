@@ -8,7 +8,7 @@ function storeDimension() {
         var row = table.insertRow(i);
         for (var j = 0; j < input2; j++) {
             row.inserCell(i);
-            cell1.innerHTML = "some text"; //Put "some text" in all column1 fields
+            cell1.innerHTML = "some text=)"; //Put "some text" in all column1 fields
             cell2.innerHTML = '<input type="text" class="form-control" size="5" maxlength="4" />'; //Make all fields in column2 input fields.
         }
     }
