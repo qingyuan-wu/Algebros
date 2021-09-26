@@ -1,6 +1,6 @@
 {
-    "name":"test",
-    "description":"this is a test",
+    "name":"LinAlg Calculator",
+    "description":"linear algebra calculator",
     "version":"1.0",
     "manifest_version": 2,
     "content_scripts": [
