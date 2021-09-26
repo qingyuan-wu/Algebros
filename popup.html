@@ -7,14 +7,14 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css"> 
     <style>
-        button {
+        /* button {
             background-color: white;
             color: black;
-            border: 2px solid #4CAF50; /* Green */
+            border: 2px solid #4CAF50;
             cursor: pointer;
             width:150px;
             height:30px;
-        }
+        } */
         button:hover {background-color: #3e8e41}
         button:active {
             background-color: #3e8e41;
@@ -25,13 +25,14 @@
 </head>
 
 <body>
-    <div>
+    <div id="page">
+        <h1>Algebros</h1>
         <h2>This is a handy lin alg calculator</h2>
         <ul>
-            <li><a href="Functions/inverse.html"><button id="inverse">inverse</button></a></li>
-            <li><a href="Functions/determinant.html"><button>determinant</button></a></li>
-            <li><button>matrix multiplication</button></li>
-            <li><button>Gaussian Elimination</button></li>
+            <li id="inv"><a href="Functions/inverse.html"><button class="function" id="inverse">inverse</button></a></li>
+            <li id="det"><a href="Functions/determinant.html"><button class="function">determinant</button></a></li>
+            <li id="mm"><button class="function">matrix multiplication</button></li>
+            <li id="GE"><button class="function">Gaussian Elimination</button></li>
 
             <script src="popup.js"></script>
         </ul>

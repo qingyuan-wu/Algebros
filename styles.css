@@ -1,8 +1,82 @@
 body {
-    width: 500px;
+    position:relative;
+    width: 510px;
     height: 500px;
+}
+
+#page {
+    /* Entire page */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #F9F6F6;
+    border-radius: 19px;
 }
 
 ul {
     list-style-type: none;
+    margin-top:100px;
+    columns:2;
+}
+
+.function {
+    height:170px;
+    width:215px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+h1 {
+    /* Algebros */
+
+
+    position: absolute;
+    left: 24.71%;
+    right: 7.84%;
+    top: 5.2%;
+    bottom: 83.6%;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 61px;
+
+    color: #FC4B40;
+
+}
+
+#inv {
+/* Inverse button */
+
+
+    position: absolute;
+
+    background: #F0AB91;
+    border-radius: 19px;
+}
+
+#det {
+    position:absolute;
+    margin-left:240px;
+}
+
+#mm {
+    position:absolute;
+    margin-top:200px;
+    margin-bottom:18px;
+}
+
+#GE {
+    position:absolute;
+    margin-left:240px;
+    margin-top:200px;
+    margin-bottom:18px;
 }
