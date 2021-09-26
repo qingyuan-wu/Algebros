@@ -2,31 +2,38 @@
 <html>
 <link rel="stylesheet" href="../styles.css">
 <style>
-    table, th, td{
-        border: 1px solid black;
+    table {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50; /* Green */
+            width:150px;
+            height:30px;
+            margin-top:20px;
+            margin-left:150px;
+
+        }
+    input {
+        text-align:center;
     }
+    form.center {
+        display: inline-block;
+    }
+
+    input:hover, input:active {background-color: #7ea830}
+    td,th {
+        text-align:center;
+    }
+
 </style>
-    <table>
-        
-    </table>
-    <script src="table.js"></script>
+    <a href="determinant.html"><button>Back</button></a>
+    <br>
+    <br>
+    <!-- After submit: linking to results (MUST be html page not JS) -->
+    <form class="center" onsubmit="return false">
+        <script src="table.js"></script>
+        <input type="submit" value="Calculate" id="submit">
 
-    <table style="width:30%">
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-        </tr>
+    </form>
+    <script src="result.js"></script>
 
-    </table>
 </html>

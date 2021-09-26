@@ -1,41 +1,32 @@
 
-document.getElementById("submit").addEventListener("click", storeDimension);
-//things to figure out:
-//addEventListener
-let mountains = [
-    { name: "Monte Falco", height: 1658, place: "Parco Foreste Casentinesi" },
-    { name: "Monte Falterona", height: 1654, place: "Parco Foreste Casentinesi" },
-    { name: "Poggio Scali", height: 1520, place: "Parco Foreste Casentinesi" },
-    { name: "Pratomagno", height: 1592, place: "Parco Foreste Casentinesi" },
-    { name: "Monte Amiata", height: 1738, place: "Siena" }
-  ];
-  
-  function generateTableHead(table, data) {
-    let thead = table.createTHead();
-    let row = thead.insertRow();
-    for (let key of data) {
-      let th = document.createElement("th");
-      let text = document.createTextNode(key);
-      th.appendChild(text);
-      row.appendChild(th);
-    }
-  }
-  
-  function generateTable(table, data) {
-    const input1 = document.getElementById("userInput1").value;
-    const input2 = document.getElementById("userInput2").value;
 
-    for (let element of data) {
-      let row = table.insertRow();
-      for (key in element) {
-        let cell = row.insertCell();
-        let text = document.createTextNode(element[key]);
-        cell.appendChild(text);
-      }
+function tableCreate(){
+  var body = document.body,
+      tbl  = document.createElement('table');
+
+  for(var i = 0; i <= localStorage.getItem("rows"); i++){
+      var tr = tbl.insertRow();
+      for(var j = 0; j <= localStorage.getItem("columns"); j++){
+        var td = tr.insertCell();
+        if (i==0 && j==0) continue;
+        if (i==0) {
+          td.appendChild(document.createTextNode(j));
+        }
+        else if (j==0) {
+          td.appendChild(document.createTextNode(i));
+        }
+        else{
+          var cell = document.createElement('input');
+          cell.defaultValue = 0; // default is 0
+          cell.id = `cell${i}${j}`; //i-th row, j-th column
+          cell.type = "text";
+          cell.size = 2;
+
+          td.appendChild(cell);
+        }
+        // <input type="text" size="4" autocomplete="off" name="matrix[0][2]" title="[1,3]" class="inputCell" style=""></input>
     }
   }
-  
-  let table = document.querySelector("table");
-  let data = Object.keys(mountains[0]);
-  generateTableHead(table, data);
-  generateTable(table, mountains);
+  body.appendChild(tbl);
+}
+tableCreate();
