@@ -35,12 +35,9 @@ ul {
 
 h1 {
     /* Algebros */
-
-
     position: absolute;
-    left: 24.71%;
-    right: 7.84%;
-    top: 5.2%;
+    left: 8%;
+    top: 2%;
     bottom: 83.6%;
 
     font-family: Nunito;
@@ -50,14 +47,12 @@ h1 {
     line-height: 61px;
 
     color: #FC4B40;
-
 }
 
 #inv {
-/* Inverse button */
-
-
+    /* Inverse button */
     position: absolute;
+    margin-top:0%;
 
     background: #F0AB91;
     border-radius: 19px;
@@ -70,13 +65,13 @@ h1 {
 
 #mm {
     position:absolute;
-    margin-top:200px;
+    margin-top:190px;
     margin-bottom:18px;
 }
 
 #GE {
     position:absolute;
     margin-left:240px;
-    margin-top:200px;
+    margin-top:190px;
     margin-bottom:18px;
 }
