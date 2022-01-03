@@ -1,5 +1,4 @@
 
-
 function tableCreate(){
   var body = document.body,
       tbl  = document.createElement('table');
@@ -17,7 +16,7 @@ function tableCreate(){
         }
         else{
           var cell = document.createElement('input');
-          cell.defaultValue = 0; // default is 0
+          // cell.defaultValue = 0; // default is 0
           cell.id = `cell${i}${j}`; //i-th row, j-th column
           cell.type = "text";
           cell.size = 2;

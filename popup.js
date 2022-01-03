@@ -1,4 +1,4 @@
-document.getElementById("inverse").addEventListener("click", testFunction);
+document.getElementById("mm").addEventListener("click", testFunction);
 
 function testFunction() {
     alert("hey?");

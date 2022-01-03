@@ -1,3 +1,4 @@
+
 document.getElementById("submit").addEventListener("click", retrieveMatrix);
 
 function retrieveMatrix() {
@@ -49,7 +50,7 @@ function reduce(A, row, col) {
 }
 
 function display() {
-    document.write(`<div>det = ${localStorage.getItem("determinant")}</div>`);
+    document.write(`<div id="det-output">det = ${localStorage.getItem("determinant")}</div>`);
 }
 
-display()
+display();
