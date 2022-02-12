@@ -1,3 +1,5 @@
+import { create, all } from 'mathjs'
+const math = create(all);
 function calcInverse(A){
     //base case
     if(A.length <= 1) {
@@ -24,7 +26,7 @@ function reduce(A, row, col) {
         min[i] = A[i].slice();
     }
 
-    rows = A[0].length;
+    var rows = A[0].length;
     for (var i = 0; i < rows; i++) {
       min[i].splice(col, 1);
     }
@@ -32,8 +34,11 @@ function reduce(A, row, col) {
     return min; //return the minor
 }
 
-function display() {
-    document.write(`<div>det = ${localStorage.getItem("determinant")}</div>`);
-}
+// function display() {
+//     document.write(`<div>det = ${localStorage.getItem("determinant")}</div>`);
+// }
 
-display();
+// display();
+
+A = [[1,2],[3,4]]
+console.log(math.inv(A));
